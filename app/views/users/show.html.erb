@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Extended profile:</strong>
+  <%= @user.extended_profile %>
+</p>
+
+<p>
+  <strong>Twitter handle:</strong>
+  <%= @user.twitter_handle %>
+</p>
+
+<p>
+  <strong>Facebook handle:</strong>
+  <%= @user.facebook_handle %>
+</p>
+
+<p>
+  <strong>Github handle:</strong>
+  <%= @user.github_handle %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
